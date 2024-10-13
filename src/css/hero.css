@@ -3,7 +3,6 @@ body {
   }
   .container {
     max-width: 360px;
-    min-width: 320px;
     padding-top: 16px;
     text-transform: uppercase;
     display: flex;

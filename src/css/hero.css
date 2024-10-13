@@ -1,0 +1,260 @@
+body {
+    margin: 0 0 0 0;
+  }
+  .container {
+    max-width: 360px;
+    min-width: 320px;
+    padding-top: 16px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .first-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url("../img/bg1x-mob-min.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-block {
+      background: url("../img/bg2x-mob-min.jpg");
+    }
+  }
+  
+  .first-block-title {
+    padding-top: 112px;
+    margin: 0;
+    font-family: "Impact";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.25;
+    letter-spacing: 1.8px;
+    padding-bottom: 40px;
+  }
+  
+  span {
+    color: #00b068;
+  }
+  
+  .first-block-parag {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.5px;
+    padding-top: 40px;
+    padding-bottom: 72px;
+    margin: 0px;
+  }
+  
+  .second-block {
+    background-color: #e4e5e6;
+  }
+  
+  .second-block-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    row-gap: 24px;
+    margin: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+  }
+  
+  .link-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 360px;
+    min-width: 320px;
+  }
+  
+  .link-block-a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 44px;
+    z-index: 3;
+  }
+  
+  .link-block-gr {
+    width: 165px;
+    height: 92px;
+    left: 158px;
+    background-color: #bcdfd1;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 2;
+    transition: background-color 0.5s ease;
+  }
+  
+  .link-block-a:hover + .link-block-gr {
+    background-color: #00b068;
+  }
+  
+  .link-order {
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  .link-block-svg {
+    overflow: visible;
+  }
+  
+  .arrow {
+    fill: #00b068;
+    position: absolute;
+    z-index: 10;
+    left: 6px;
+    top: 31px;
+  }
+  
+  .guy {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  /* TABLET MEASUREMENTS */
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      min-width: 704px;
+    }
+  
+    .first-block {
+      padding-left: 32px;
+      padding-right: 32px;
+      background-image: url("../img/bg1x-tab-min.jpg");
+    }
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .first-block {
+        background: url("../img/bg2x-tab-min.jpg");
+      }
+    }
+  
+    .first-block-title {
+      padding-top: 88px;
+      padding-bottom: 60px;
+      font-size: 136px;
+      line-height: 1.15;
+      letter-spacing: 1.5px;
+    }
+  
+    .link-order {
+      font-size: 20px;
+      line-height: 1.16;
+    }
+  
+    .link-block-gr {
+      width: 261px;
+      height: 96px;
+      left: 155px;
+    }
+  
+    .first-block-parag {
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0.5px;
+    }
+  
+    .second-block-list {
+      flex-direction: row;
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  /* DESKTOP MEASUREMENTS */
+  @media (min-width: 1158px) {
+    .container {
+      max-width: 1280px;
+      min-width: 1158px;
+    }
+
+    .first-block {
+        background-image: url("../img/bg1x-desk-min.jpg");
+      }
+    
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .first-block {
+          background: url("../img/bg2x-desk-min.jpg");
+        }
+      }
+  
+    .guy {
+      visibility: visible;
+      width: 108px;
+      height: 108px;
+      background-image: url("../img/guy-min.jpeg");
+      background-size: 160%;
+      background-position: 55% 10%;
+      border-radius: 16px;
+      top: 113px;
+      left: 670px;
+    }
+    
+    .first-block-desk{
+      display: flex;
+      flex-direction: row;
+      gap: 300px;
+    }
+  
+    .first-block-parag{
+      padding-top: 0;
+    }
+  
+    .link-block-a{
+      padding-left: 120px;
+    }
+  
+    .link-block-gr{
+      left:225px;
+    }
+  
+    .link-block{
+      min-width: 416px;
+    }
+  
+    .arrow {
+      left: 72px;
+    }
+  
+  }
+  

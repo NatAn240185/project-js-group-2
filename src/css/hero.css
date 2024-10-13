@@ -1,7 +1,7 @@
 body {
     margin: 0 0 0 0;
   }
-  .container {
+  .container-hero {
     max-width: 360px;
     padding-top: 16px;
     text-transform: uppercase;
@@ -11,14 +11,14 @@ body {
   }
   
   .first-block {
-    padding-left: 20px;
-    padding-right: 20px;
     background-image: url("../img/bg1x-mob-min.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   @media (min-device-pixel-ratio: 2),
@@ -134,7 +134,6 @@ body {
     fill: #00b068;
     position: absolute;
     z-index: 10;
-    left: 6px;
     top: 31px;
   }
   
@@ -146,7 +145,7 @@ body {
   /* TABLET MEASUREMENTS */
   
   @media (min-width: 768px) {
-    .container {
+    .container-hero {
       max-width: 768px;
       min-width: 704px;
     }
@@ -195,12 +194,14 @@ body {
       gap: 40px;
       padding-top: 40px;
       padding-bottom: 40px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
   
   /* DESKTOP MEASUREMENTS */
   @media (min-width: 1158px) {
-    .container {
+    .container-hero {
       max-width: 1280px;
       min-width: 1158px;
     }

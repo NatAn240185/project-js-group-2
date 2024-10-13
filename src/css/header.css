@@ -12,6 +12,7 @@
 }
 
 .logo {
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
@@ -67,7 +68,7 @@
     left: 20px;
 }
 .btn-close {
-    
+    border: none;
     background-color: transparent;
     cursor: pointer;
     display: flex;
@@ -87,6 +88,7 @@
 }
 
 .link-header {
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;

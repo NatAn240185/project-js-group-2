@@ -1,9 +1,9 @@
 /*body {
     margin: 0 0 0 0;
   }*/
-  .container {
-    /*max-width: 360px;
-    min-width: 320px;*/
+  .hero-container {
+    max-width: 360px;
+    min-width: 320px;
     padding-top: 16px;
     text-transform: uppercase;
     display: flex;

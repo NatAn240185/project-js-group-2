@@ -74,6 +74,9 @@
   width: 100%;
   gap: 16px;
 }
+.faq-list-type.active .faq-open-btn {
+  transform: rotate(180deg);
+}
 .icon {
   width: 32px;
   height: 32px;
@@ -149,9 +152,4 @@
   right: 20px;
   margin: 0;
   padding: 0;
-}
-
-/* Стиль кнопки в активному стані (обернена іконка) */
-.faq-list-type.active .faq-open-btn {
-  transform: rotate(180deg);
 }

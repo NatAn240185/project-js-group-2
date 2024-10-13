@@ -10,10 +10,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/project-js-group-2/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-js-group-2/assets/index-Bd66-0rv.css">
+    <link rel="stylesheet" crossorigin href="/project-js-group-2/assets/index-BJx-VjdU.css">
   </head>
   <body>
-    
+    <header class="header">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a class="logo" href="./index.html">LLOYD<span class="logo-jefferson">JEFFERSON.</span></a>
+        <ul class="header-list-nav">
+          <li><a class="link-header" href="#about-me">About me</a></li>
+          <li><a class="link-header" href="#projects">Projects</a></li>
+          <li><a class="link-header" href="#contacs">Contacs</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="open-menu-btn" data-modal-open>
+        <svg width="32" height="32" class="icon-btn">
+          <use href="./img/header-image/header-icons.svg#icon-header_menu-open"></use>
+        </svg>
+      </button>
+    </div>
+    <!--menu-->
+    <div class="menu-header is-hidden" data-modal>
+      <div class="menu-header-wrap">
+        <a class="logo menu-logo" href="./index.html">LLOYD<span class="logo-jefferson">JEFFERSON.</span></a>
+        <button type="button" class="btn-close" data-modal-close>
+          <svg width="32" height="32">
+            <use href="./img/header-image/header-icons.svg#icon-header-close"></use>
+          </svg>
+        </button>
+        <nav class="menu-header-nav">
+          <ul class="menu-header-list-nav">
+            <li><a class="link-header" href="#about-me">About me</a></li>
+            <li><a class="link-header" href="#projects">Projects</a></li>
+            <li><a class="link-header" href="#contacs">Contacs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
     <main>
       

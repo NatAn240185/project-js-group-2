@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0 0 0 0;
   }
   .container {
@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  }*/
   
   .first-block {
     padding-left: 20px;
@@ -72,7 +72,7 @@ body {
     padding-bottom: 32px;
   }
   
-  ul {
+  /*ul {
     list-style: none;
   }
   
@@ -85,7 +85,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.5px;
     text-transform: capitalize;
-  }
+  }*/
   
   .link-block {
     position: relative;
@@ -147,10 +147,10 @@ body {
   /* TABLET MEASUREMENTS */
   
   @media (min-width: 768px) {
-    .container {
+    /*.container {
       max-width: 768px;
       min-width: 704px;
-    }
+    }*/
   
     .first-block {
       padding-left: 32px;
@@ -201,10 +201,10 @@ body {
   
   /* DESKTOP MEASUREMENTS */
   @media (min-width: 1158px) {
-    .container {
+     /*.container {
       max-width: 1280px;
       min-width: 1158px;
-    }
+    }*/
 
     .first-block {
         background-image: url("../img/bg1x-desk-min.jpg");

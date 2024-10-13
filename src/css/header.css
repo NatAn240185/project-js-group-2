@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 36px;
 }
 
 .header-nav {
@@ -107,6 +107,7 @@
     }
 
     .logo {
+        margin-right: auto;
         font-size: 32px;
         letter-spacing: 0.05em;
     }
@@ -116,9 +117,12 @@
         display: none;
     }
 
+    .header-nav {
+        width: 100%;
+    }
+
     .header-list-nav {
         display: flex;
-        width: 305px;
         gap: 40px;
     }
 }

@@ -212,9 +212,7 @@ span {
     left: 670px;
   }
 
-  .link-block{
-    position: relative;
-
+  .first-block-desk{
     display: flex;
     flex-direction: row;
     gap: 300px;
@@ -229,10 +227,10 @@ span {
   }
 
   .link-block-gr{
-    left: 225px;
+    left:225px;
   }
 
-  .link-block {
+  .link-block{
     min-width: 416px;
   }
 

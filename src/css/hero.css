@@ -1,3 +1,4 @@
+
 .container-hero {
   max-width: 360px;
   text-transform: uppercase;
@@ -131,6 +132,21 @@ span {
     min-width: 704px;
   }
 
+=======
+/*body {
+    margin: 0 0 0 0;
+  }
+  .hero-container {
+    max-width: 360px;
+    min-width: 320px;
+    padding-top: 16px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }*/
+  
+
   .first-block {
     padding-left: 32px;
     padding-right: 32px;
@@ -191,6 +207,7 @@ span {
     background-image: url('../img/bg1x-desk-min.png');
   }
 
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -211,7 +228,10 @@ span {
     left: 670px;
   }
 
-  .first-block-desk {
+ 
+  .link-block {
+    position: relative;
+
     display: flex;
     flex-direction: row;
     gap: 300px;
@@ -229,11 +249,77 @@ span {
     left: 225px;
   }
 
+
   .link-block {
     min-width: 416px;
   }
 
+  
+  /* TABLET MEASUREMENTS */
+  
+  @media (min-width: 768px) {
+    /*.container {
+      max-width: 768px;
+      min-width: 704px;
+    }*/
+  
+    .first-block {
+      padding-left: 32px;
+      padding-right: 32px;
+      background-image: url("../img/bg1x-tab-min.jpg");
+    }
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .first-block {
+        background: url("../img/bg2x-tab-min.jpg");
+      }
+    }
+  
+    .first-block-title {
+      padding-top: 88px;
+      padding-bottom: 60px;
+      font-size: 136px;
+      line-height: 1.15;
+      letter-spacing: 1.5px;
+    }
+  
+    .link-order {
+      font-size: 20px;
+      line-height: 1.16;
+    }
+  
+    .link-block-gr {
+      width: 261px;
+      height: 96px;
+      left: 155px;
+    }
+  
+    .first-block-parag {
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0.5px;
+    }
+  
+    .second-block-list {
+      flex-direction: row;
+      gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  /* DESKTOP MEASUREMENTS */
+  @media (min-width: 1158px) {
+     /*.container {
+      max-width: 1280px;
+      min-width: 1158px;
+    }*/
+
+
   .arrow {
     left: 72px;
   }
-}
+
+

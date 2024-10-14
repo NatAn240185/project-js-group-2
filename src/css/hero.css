@@ -115,7 +115,7 @@ span {
   fill: #00b068;
   position: absolute;
   z-index: 10;
-  top: 31px;
+  top: 30px;
 }
 
 .guy {
@@ -177,6 +177,10 @@ span {
     padding-bottom: 40px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .arrow {
+    top: 28px;
   }
 }
 

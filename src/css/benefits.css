@@ -58,84 +58,72 @@
       letter-spacing: 0.5px;
       text-align: left;
       text-transform: uppercase;
-    }
-    
-    /* .benefits-reviews-item-time {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 24px;
-      letter-spacing: 0.5px; 
-      opacity: 0.8; 
     } */
     
-    .benefits-reviews-item-text { 
+      .benefits-reviews-item-text { 
       font-size: 16px;
       font-weight: 300;
       line-height: 24px;
       letter-spacing: 0.5px;
-      /* text-align: left; */
-      /* padding-top: 20px; */
+    
     }
     
-    /*------MEDIA-----*/
+    /* ------MEDIA----- */
     
     @media screen and (min-width: 768px) {
-      .benefits-reviews-div { 
+      /* .benefits-reviews-div { 
         max-width: 768px;
         padding: 0 20px;
-      }
+      } */
     
          
       .benefits-reviews-title {
         font-size: 108px;
         line-height: 124px;
         font-weight: 400;
+        font-family: Impact;
+        text-transform: uppercase;
         letter-spacing: 1.8px;
       }
-    
-  
-      /*ynetu v HTML*/
-      .benefits-reviews-list {  
-        column-gap: 16px;
+
+      .benefits-reviews-list { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
       }
     
+  
       .benefits-reviews-list-item {
         width: calc((100% - 16px) / 2);
-        padding: 24px;
+        padding: 32px;
       }
     
-      .benefits-reviews-list-item:not(:nth-child(-n + 1)) {
+      /* .benefits-reviews-list-item:not(:nth-child(-n + 1)) {
         display: block;
-      }
-    
-      .benefits-reviews-list-item:not(:nth-child(-n + 2)) {
-        display: none;
-      }
-    
-      .benefits-reviews-item {
-        font-size: 20px;
-        line-height: 45px;
-      }
-    
-  
-      /*netu v html*/
-      /* .clients-reviews-item-time { 
-        font-size: 16px;
-        line-height: 24px;
       } */
     
-      .benefits-reviews-item-text {
+      /* .benefits-reviews-list-item:not(:nth-child(-n + 2)) {
+        display: none;
+      } */
+    
+      /* .benefits-reviews-item {
+        font-size: 20px;
+        line-height: 45px;
+      } */
+    
+  
+      /* .benefits-reviews-item-text {
         font-size: 18px;
         line-height: 27px;
         text-align: left;
-      }
-    }
+      }  */
+    } 
     
-    @media screen and (min-width: 1440px) {
-      .benefits-reviews-div {
-        max-width: 1440px;
-        padding: 0 60px;
-      }
+    @media screen and (min-width: 1280px) {
+      /* .benefits-reviews-div { */
+        /* max-width: 1440px; */
+        /* padding: 0 60px; */
+      /* } */
     
       .benefits-rewiews  {
         padding-top: 60px;
@@ -144,15 +132,15 @@
     
       .benefits-reviews-list {
         row-gap: 24px;
-        justify-content: center;
+        /* justify-content: center; */
       }
     
       .benefits-reviews-list-item {
-        width: calc((100% - 20px * 2) / 3);
-        padding: 32px;
+        width: calc((100% - 32px * 2) / 3);
+        /* padding: 32px; */
       }
     
-      .benefits-reviews-list-item:not(:nth-child(-n + 1)) {
+      /* .benefits-reviews-list-item:not(:nth-child(-n + 1)) {
         display: block;
-      }
+      } */
     }

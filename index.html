@@ -10,7 +10,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/project-js-group-2/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-js-group-2/assets/index-D87h0vyi.css">
+    <link rel="modulepreload" crossorigin href="/project-js-group-2/assets/vendor-CTqzIL4Y.js">
+    <link rel="stylesheet" crossorigin href="/project-js-group-2/assets/vendor-CzG10Eoq.css">
+    <link rel="stylesheet" crossorigin href="/project-js-group-2/assets/index-CjXsq7QK.css">
   </head>
   <body>
     <header class="header">
@@ -33,9 +35,9 @@
     <div class="menu-header is-hidden" data-modal>
       <div class="menu-header-wrap">
         <a class="logo menu-logo" href="./index.html">LLOYD<span class="logo-jefferson">JEFFERSON.</span></a>
-        <button type="button" class="btn-close" data-modal-close>
+        <button type="button" class="icon-closing" data-modal-close>
           <svg width="32" height="32">
-            <use href="./img/header-image/header-icons.svg#icon-header-close"></use>
+            <use href="../img/icon.svg#icon-closing"></use>
           </svg>
         </button>
         <nav class="menu-header-nav">
@@ -117,7 +119,8 @@
       
       
       
-       <section class="faq">
+       <!--
+ <section class="faq">
       <div class="container-faq">
         <h2 class="faq-title">
           FREQUENTLY ASKED <span class="faq-title-color">QUESTION</span>
@@ -228,8 +231,156 @@
         </ul>
       </div>
     </section>
- 
-
+    <script type="module" src="./js/faq.js"></script>
+    -->
+    
+<section class="faq section container">
+  <h2 class="faq-title">
+    frequently asked <span class="faq-title-accent">question</span>
+  </h2>
+  <ul class="accordion-container">
+    <li class="ac" id="ac">
+      <h3 class="ac-header">
+        <button class="ac-trigger" id="ac-trigger" type="button">
+          <span id="btn-text-wrap"
+            >What programming languages are most often used in your
+            project?</span
+          >
+          <svg class="faq-svg">
+            <use xlink:href="/project-js-group-2/assets/icon-CwlkgYyU.svg#icon-FAQ"></use>
+          </svg>
+        </button>
+      </h3>
+      <div class="ac-panel">
+        <p id="ac-text">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac">
+      <h3 class="ac-header">
+        <button class="ac-trigger" id="ac-trigger" type="button">
+          <span id="btn-text-wrap"
+            >What are the deadlines for the project?</span
+          >
+          <svg class="faq-svg" width="24" height="24">
+            <use
+              xlink:href="/project-js-group-2/assets/icon-CwlkgYyU.svg#icon-FAQ"
+              x="50%"
+              y="75%"
+              transform="translate(-12, -12)"
+            ></use>
+          </svg>
+        </button>
+      </h3>
+      <div class="ac-panel">
+        <p id="ac-text">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac">
+      <h3 class="ac-header">
+        <button class="ac-trigger" id="ac-trigger" type="button">
+          <span id="btn-text-wrap">What payment methods do you accept?</span>
+          <svg class="faq-svg" width="24" height="24">
+            <use
+              xlink:href="/project-js-group-2/assets/icon-CwlkgYyU.svg#icon-FAQ"
+              x="50%"
+              y="75%"
+              transform="translate(-12, -12)"
+            ></use>
+          </svg>
+        </button>
+      </h3>
+      <div class="ac-panel">
+        <p id="ac-text">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac">
+      <h3 class="ac-header">
+        <button class="ac-trigger" id="ac-trigger" type="button">
+          <span id="btn-text-wrap">How can I contact you?</span>
+          <svg class="faq-svg" width="24" height="24">
+            <use
+              xlink:href="/project-js-group-2/assets/icon-CwlkgYyU.svg#icon-FAQ"
+              x="50%"
+              y="75%"
+              transform="translate(-12, -12)"
+            ></use>
+          </svg>
+        </button>
+      </h3>
+      <div class="ac-panel">
+        <p id="ac-text">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac">
+      <h3 class="ac-header">
+        <button class="ac-trigger" id="ac-trigger" type="button">
+          <span id="btn-text-wrap">Do you provide advice or support?</span>
+          <svg class="faq-svg" width="24" height="24">
+            <use
+              xlink:href="/project-js-group-2/assets/icon-CwlkgYyU.svg#icon-FAQ"
+              x="50%"
+              y="75%"
+              transform="translate(-12, -12)"
+            ></use>
+          </svg>
+        </button>
+      </h3>
+      <div class="ac-panel">
+        <p id="ac-text">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac">
+      <h3 class="ac-header">
+        <button class="ac-trigger" id="ac-trigger" type="button">
+          <span id="btn-text-wrap"
+            >What does the process of developing a software product look like
+            from idea to implementation?</span
+          >
+          <svg class="faq-svg" width="24" height="24">
+            <use
+              xlink:href="/project-js-group-2/assets/icon-CwlkgYyU.svg#icon-FAQ"
+              x="50%"
+              y="75%"
+              transform="translate(-12, -12)"
+            ></use>
+          </svg>
+        </button>
+      </h3>
+      <div class="ac-panel">
+        <p id="ac-text">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </div>
+    </li>
+  </ul>
+  <div class="bgr-img"></div>
+</section>
       
       
     </main>

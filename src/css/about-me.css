@@ -1,0 +1,153 @@
+
+.about-title {
+font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+
+}
+
+.about-title, .about-img, .about-text-1, .about-text-2 {
+        margin-bottom: 40px;
+}
+
+.about-title-span {
+color: #00B068;
+}
+
+.about-text-title {
+font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 32px;
+}
+
+.about-text {
+font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    margin-bottom: 24px;
+}
+
+.about-list {
+    margin-bottom: 12px;
+    display: flex;
+        align-items: center;
+        width: 320px;
+    
+}
+
+.about-list-none {
+    margin-bottom: 0px;
+}
+
+.about-item {
+    width: 320px;
+}
+
+.img-guy-about {
+    border-radius: 16px;
+}
+
+.rectangle {
+    width: 4px;
+        height: 4px;
+        background-color: #00B068;
+        border-radius: 1px;
+        margin: 10px 18px 58px 10px;
+        flex-shrink: 0;
+}
+
+.rectangle-text-3 {
+margin: 10px 14px 10px 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-title {
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+    }
+    .img-guy-about {
+        width: 336px;
+            height: 392px;
+            flex: 1;
+            margin-top: 408px;
+    }
+    .about-text-1{
+    flex: 1;
+    }
+    .about-text-title {
+        font-size: 36px;
+        line-height: 133%;
+        letter-spacing: 0.01em;
+    }
+    .about-column {
+        display: flex;
+            gap: 32px;
+            
+    }
+
+    .about-text-container {
+    display: flex;
+        gap: 32px;
+    }
+
+    .about-text-2 {
+        flex: 1;
+    }
+
+    .about-text-3 {
+flex: 1;
+    }
+
+    .rectangle {
+        margin: 10px 18px 34px 10px;
+    }
+
+    .rectangle-tab {
+        margin-bottom: 58px;
+    }
+    
+        .about-list {
+            margin-bottom: 16px;
+        }
+
+    .about-bio {
+        background-image: url(../img/about-bg1x.png);
+            position: relative;
+            background-position: 92% 80%;
+                background-repeat: no-repeat;
+                background-size: 336px;       
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .img-guy-about {
+            width: 384px;
+            height: 448px;
+            margin-top: 312px;
+            margin-left: 206px;
+        }
+    .about-text-container {
+        gap: 136px;
+        margin-left: 206px;
+    }
+    .about-column{
+            gap: 136px;
+    }
+    .about-bio {
+    background-position: 100% 68%;
+    background-size: 384px;
+    }
+}

@@ -131,7 +131,11 @@ span {
     max-width: 768px;
     min-width: 704px;
   }
+<<<<<<< Updated upstream
  
+=======
+
+>>>>>>> Stashed changes
   .first-block {
     padding-left: 32px;
     padding-right: 32px;
@@ -233,6 +237,7 @@ span {
     left: 225px;
   }
 
+<<<<<<< Updated upstream
 
   .link-block{
     min-width: 416px;
@@ -242,3 +247,13 @@ span {
     left: 72px;
   }
 }
+=======
+  .link-block {
+    min-width: 416px;
+  }
+
+  .arrow {
+    left: 72px;
+  }
+}
+>>>>>>> Stashed changes

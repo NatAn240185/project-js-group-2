@@ -1,20 +1,29 @@
-/*body {
-    margin: 0 0 0 0;
-  }
-  .hero-container {
-    max-width: 360px;
-    min-width: 320px;
-    padding-top: 16px;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }*/
-  
+.container-hero {
+  max-width: 360px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-block {
+  background-image: url('../img/bg1x-mob-min.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .first-block {
     background: url('../img/bg2x-mob-min.png');
   }
-
+}
 
 .first-block-title {
   padding-top: 112px;
@@ -106,7 +115,7 @@ span {
   fill: #00b068;
   position: absolute;
   z-index: 10;
-  top: 31px;
+  top: 30px;
 }
 
 .guy {
@@ -121,7 +130,6 @@ span {
     max-width: 768px;
     min-width: 704px;
   }
- 
   .first-block {
     padding-left: 32px;
     padding-right: 32px;
@@ -169,6 +177,10 @@ span {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .arrow {
+    top: 28px;
+  }
 }
 
 /* DESKTOP MEASUREMENTS */
@@ -203,42 +215,29 @@ span {
     left: 670px;
   }
 
-  .link-block{
-    position: relative;
+  .first-block-desk{
     display: flex;
     flex-direction: row;
-    max-width: 360px;
-    min-width: 320px;
-  }
-  
-  .link-block-a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 44px;
-    z-index: 3;
-  }
-  
-  .link-block-gr {
-    width: 165px;
-    height: 92px;
-    left: 158px;
-    background-color: #bcdfd1;
-    border-radius: 16px;
-    position: absolute;
-    z-index: 2;
-    transition: background-color 0.5s ease;
-  }
-  
-  .link-block-a:hover + .link-block-gr {
-    background-color: #00b068;
+    gap: 300px;
   }
 
+  .first-block-parag{
+    padding-top: 0;
+  }
+
+  .link-block-a{
+    padding-left: 120px;
+  }
+
+  .link-block-gr{
+    left:225px;
+  }
 
   .link-block{
     min-width: 416px;
   }
-  
-  .link-block-svg {
-    overflow: visible;
+
+  .arrow {
+    left: 72px;
   }
 }

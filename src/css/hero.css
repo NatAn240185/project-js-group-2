@@ -13,8 +13,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -132,8 +130,6 @@ span {
   }
 
   .first-block {
-    padding-left: 32px;
-    padding-right: 32px;
     background-image: url('../img/bg1x-tab-min.png');
   }
 

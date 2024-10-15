@@ -1,15 +1,15 @@
 // Массив всех проектов
 const allProjects = [
-   { img: '/img/my-projects/Rectangle 11-min.png', title: 'wallet webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 12-min.png', title: 'English excellence webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 9-min.png', title: 'green harvest online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/first screen 1-min.png', title: 'starlight studio landing page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 10-min.png', title: 'power pulse webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 4-min.png', title: 'energy flow webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 5-min.png', title: 'fruitbox online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 6-min.png', title: 'chego jewelry website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 7-min.png', title: 'mimino website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: '/img/my-projects/Rectangle 8-min.png', title: 'vyshyvanka vibes Landing Page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+   { img: './img/my-projects/Rectangle 11-min.png', title: 'wallet webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 12-min.png', title: 'English excellence webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 9-min.png', title: 'green harvest online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/first screen 1-min.png', title: 'starlight studio landing page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 10-min.png', title: 'power pulse webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 4-min.png', title: 'energy flow webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 5-min.png', title: 'fruitbox online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 6-min.png', title: 'chego jewelry website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 7-min.png', title: 'mimino website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: './img/my-projects/Rectangle 8-min.png', title: 'vyshyvanka vibes Landing Page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
 
 
 ];

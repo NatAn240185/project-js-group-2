@@ -29,12 +29,10 @@
   background: #e4e5e6;
 }
 .reviews-text {
-  width: 256px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  margin-bottom: 24px;
   align-self: stretch;
 }
 .reviews-person-details {
@@ -71,52 +69,44 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  border: 1 solid #292929;
-}
-.reviews-btn-previous:hover,
-.reviews-btn-next:hover {
-  border-color: #ed3b44;
-  box-shadow: 0 0 15px #ed3b44;
+  border: 1 solid;
 }
 
-.reviews-button-icon {
-  stroke: #fafafa;
-  fill: none;
-  transition: 0.35s ease-in-out;
+.reviews-section .reviews-btn:focus,
+.reviews-btn:hover {
+  border: 1px solid #292929;
+  background: #e4e5e6;
 }
-
-.reviews-btn-previous:hover .reviews-button-icon,
-.reviews-btn-next:hover .reviews-button-icon {
-  stroke: #ed3b44;
+.reviews-section .reviews-btn:disabled {
+  border: 1px solid #e4e5e6;
+  cursor: no-drop;
 }
-
-.swiper-button-disabled {
-  border: 1px solid #fafafa33;
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-  transition: 0.35s ease-in-out;
+.reviews-section .reviews-btn:disabled .arrow {
+  --color: #e4e5e6;
+  opacity: 0.22;
 }
-.swiper-button-disabled .reviews-button-icon {
+.reviews-section .reviews-btn:disabled .btn-icon {
   stroke: #3b3b3b;
 }
-
-@media screen and (min-width: 768px) {
-  .reviews-box-btn {
-    gap: 20px;
-  }
-
-  .reviews-btn-previous,
-  .reviews-btn-next {
-    padding: 18px;
-    width: 68px;
-    height: 68px;
-  }
-
-  .reviews-button-icon {
-    width: 24px;
-    height: 24px;
-  }
+.reviews-section .reviews-error-text {
+  margin: 0 auto;
+  font-size: 30px;
+}
+.reviews-btn-icon {
+  stroke: #292929;
+}
+.reviews-section .btn-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: black;
+  stroke: black;
+  stroke-width: 0;
+  stroke-width: 2px; /* fill: var(--color-white); */ /* stroke: var(--color-white); */
+}
+.right-arrow {
+  stroke: black;
+  fill: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -129,16 +119,20 @@
     width: 704px;
   }
   .reviews-text {
-    width: 640px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1440px) {
   .reviews-tittle {
     margin-bottom: 80px;
   }
+  .reviews-text {
+    height: 96px;
+  }
   .reviews-list {
+    height: 224px;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    width: calc((100% - 32px) / 2);
   }
 }

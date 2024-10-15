@@ -5,11 +5,13 @@ import iziToast from 'izitoast';
 
 const listEl = document.querySelector('.js-reviews-box-list');
 
-axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api-docs';
+axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
 async function getReviewsData() {
+  console.log('fetching data');
   try {
     const response = await axios.get(`/reviews`);
+    console.log(response.data);
     return response.data;
   } catch (error) {
     iziToast.error({
@@ -24,22 +26,22 @@ async function renderReviews() {
   try {
     const reviewsData = await getReviewsData();
     if (!reviewsData || reviewsData.length === 0) {
-      listEl.innerHTML = '<li class="reviews-item">Not Found</li>';
+      listEl.innerHTML = '<li class="reviews-error-text">Not Found</li>';
       return;
     }
     const reviewsList = reviewsData
       .map(
         review => `
           <li class="swiper-slide reviews-item">
-          <div class="reviews-text">${review}</div>
+          <div class="reviews-text">${review.review}</div>
 
            <div class="reviews-person-details">
-            <img src="${avatar_url}"
+            <img src="${review.avatar_url}"
                  loading="lazy"
-                 alt="${author}"
+                 alt="${review.author}"
                  class="reviews-img"
                  width="40" height="40">
-                 <h3 class="reviews-subtitle">${author}</h3>
+                 <h3 class="reviews-subtitle">${review.author}</h3>
                  </div>
           </li>
         `
@@ -47,10 +49,11 @@ async function renderReviews() {
       .join('');
     listEl.innerHTML = reviewsList;
   } catch (error) {
-    iziToast.error({
-      message: 'Error rendering reviews. Please try again later.',
-      position: 'topRight',
-    });
+    console.log(error),
+      iziToast.error({
+        message: 'Error rendering reviews. Please try again later.',
+        position: 'topRight',
+      });
   }
 }
 

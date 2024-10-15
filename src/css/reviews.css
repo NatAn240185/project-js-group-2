@@ -1,3 +1,8 @@
+@import url('./base.css');
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'izitoast/dist/css/iziToast.min.css';
+
 .reviews-section {
   padding: 40px 0;
 }
@@ -32,6 +37,12 @@
   margin-bottom: 24px;
   align-self: stretch;
 }
+.reviews-person-details {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
 .reviews-img {
   width: 40px;
   height: 40px;
@@ -52,45 +63,82 @@
   align-items: center;
 }
 
-.reviews-btn {
+.reviews-btn-previous,
+.reviews-btn-next {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  padding: 12px;
-  border: 1px solid #e4e5e6;
   border-radius: 8px;
+  border: 1 solid #292929;
 }
-.reviews-btn-left-icon {
-  transform: rotate(180deg);
-}
-.reviews-btn:focus,
-.reviews-btn:hover {
-  background: #e4e5e6;
+.reviews-btn-previous:hover,
+.reviews-btn-next:hover {
+  border-color: #ed3b44;
+  box-shadow: 0 0 15px #ed3b44;
 }
 
-.reviews-btn:disabled {
-  border: 1px solid #e4e5e6;
-  cursor: no-drop;
-}
-.reviews-btn:disabled .arrow {
-  --color: #e4e5e6;
-  opacity: 0.22;
-}
-.reviews-btn:disabled .btn-icon {
-  stroke: #e4e5e6;
-}
-.reviews-error-text {
-  margin: 0 auto;
-  font-size: 30px;
-}
-.btn-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  fill: #fafafa;
+.reviews-button-icon {
   stroke: #fafafa;
-  stroke-width: 0;
-  stroke-width: 2px; /* fill: var(--color-white); */ /* stroke: var(--color-white); */
+  fill: none;
+  transition: 0.35s ease-in-out;
+}
+
+.reviews-btn-previous:hover .reviews-button-icon,
+.reviews-btn-next:hover .reviews-button-icon {
+  stroke: #ed3b44;
+}
+
+.swiper-button-disabled {
+  border: 1px solid #fafafa33;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+}
+.swiper-button-disabled .reviews-button-icon {
+  stroke: #3b3b3b;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-box-btn {
+    gap: 20px;
+  }
+
+  .reviews-btn-previous,
+  .reviews-btn-next {
+    padding: 18px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .reviews-button-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-tittle {
+    margin-bottom: 60px;
+    font-size: 108px;
+    line-height: 1.14;
+  }
+  .reviews-item {
+    width: 704px;
+  }
+  .reviews-text {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-tittle {
+    margin-bottom: 80px;
+  }
+  .reviews-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 }

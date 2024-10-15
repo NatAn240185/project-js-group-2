@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 36px;
+    padding: 20px;
 }
 
 .header-nav {
@@ -35,6 +35,7 @@
     cursor: pointer;
     border: none;
     line-height: 0;
+    fill: #292929;
 }
 .menu-header {
     position: fixed;
@@ -43,9 +44,8 @@
     left: auto;
     width: 100%;
     height: 100%;
-    background: transparent;
-    background-image: url(../img/decor-header1x.jpg);
-    background-repeat: no-repeat;
+    background: #f0f0f0;;
+    background-image: url(../img/bg1x-mob-min.png);
     background-position: center;
     background-size: cover;
     transition:
@@ -67,7 +67,7 @@
     top: 20px;
     left: 20px;
 }
-.btn-close {
+.icon-closing {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -75,8 +75,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 16px;
 }
 
 .menu-header-list-nav {

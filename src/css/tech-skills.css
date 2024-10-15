@@ -12,8 +12,9 @@ body {
   overflow: hidden;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.33;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   background-color: #bcdfd1;
   letter-spacing: 0.5px;
@@ -77,4 +78,11 @@ p{
 
 .item.sec-row::before{
     background-color: #292929;
+}
+
+@media (min-width: 768px){
+  .marquee {
+    font-size: 36px;
+    line-height: 1.33;
+  }
 }

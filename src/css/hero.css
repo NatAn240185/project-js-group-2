@@ -1,5 +1,4 @@
 .container-hero {
-  max-width: 360px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -13,8 +12,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -115,7 +112,7 @@ span {
   fill: #00b068;
   position: absolute;
   z-index: 10;
-  top: 31px;
+  top: 30px;
 }
 
 .guy {
@@ -130,10 +127,7 @@ span {
     max-width: 768px;
     min-width: 704px;
   }
-
   .first-block {
-    padding-left: 32px;
-    padding-right: 32px;
     background-image: url('../img/bg1x-tab-min.png');
   }
 
@@ -178,6 +172,10 @@ span {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .arrow {
+    top: 28px;
+  }
 }
 
 /* DESKTOP MEASUREMENTS */
@@ -212,9 +210,7 @@ span {
     left: 670px;
   }
 
-  .link-block{
-    position: relative;
-
+  .first-block-desk{
     display: flex;
     flex-direction: row;
     gap: 300px;
@@ -229,10 +225,10 @@ span {
   }
 
   .link-block-gr{
-    left: 225px;
+    left:225px;
   }
 
-  .link-block {
+  .link-block{
     min-width: 416px;
   }
 

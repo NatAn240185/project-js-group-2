@@ -1,5 +1,4 @@
 .container-hero {
-  max-width: 360px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -128,7 +127,6 @@ span {
     max-width: 768px;
     min-width: 704px;
   }
-
   .first-block {
     background-image: url('../img/bg1x-tab-min.png');
   }

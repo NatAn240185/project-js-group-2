@@ -1,35 +1,55 @@
 <header class="header">
-    <div class="container header-container">
-      <nav class="header-nav">
-        <a class="logo" href="./index.html">LLOYD<span class="logo-jefferson">JEFFERSON.</span></a>
-        <ul class="header-list-nav">
-          <li><a class="link-header" href="#about-me">About me</a></li>
-          <li><a class="link-header" href="#projects">Projects</a></li>
-          <li><a class="link-header" href="#contacs">Contacs</a></li>
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="logo" href="./index.html"
+        >Lloyd<span class="accent">Jefferson.</span></a
+      >
+      <div class="button-theme-wrapper">
+        <button class="btn-header" id="btn-header">
+          <span class="circle" id="header-mob-span"></span>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-link-tag">
+            <a class="nav-tag" href="#about">About me</a>
+          </li>
+          <li class="nav-link-tag">
+            <a class="nav-tag" href="#projects">Projects</a>
+          </li>
+          <li class="nav-link-tag">
+            <a class="nav-tag" href="#contacts">Contacts</a>
+          </li>
         </ul>
-      </nav>
-      <button type="button" class="open-menu-btn" data-modal-open>
-        <svg width="32" height="32" class="icon-btn">
-          <use href="../img/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </div>
-    <!--menu-->
-    <div class="menu-header is-hidden" data-modal>
-      <div class="menu-header-wrap">
-        <a class="logo menu-logo" href="./index.html">LLOYD<span class="logo-jefferson">JEFFERSON.</span></a>
-        <button type="button" class="icon-closing" data-modal-close>
-          <svg width="32" height="32">
-            <use href="../img/icon.svg#icon-closing"></use>
+      </div>
+    </nav>
+    <button class="mob-menu-btn js-open-menu">
+      <svg class="mob-svg" width="16" height="16">
+        <use href="./img/icon.svg#icon-lets-mob"></use>
+      </svg>
+    </button>
+    <div class="mob-menu js-menu-container">
+      <header class="mob-header">
+        <a class="mob-logo" href="./index.html"
+          >Lloyd<span class="mob-accent">Jefferson.</span></a
+        >
+        <button class="mob-btn-close js-close-menu" title="close" type="button">
+          <svg class="mob-close-svg" width="16" height="16">
+            <use href="./img/icon.svg#icon-closing"></use>
           </svg>
         </button>
-        <nav class="menu-header-nav">
-          <ul class="menu-header-list-nav">
-            <li><a class="link-header" href="#about-me">About me</a></li>
-            <li><a class="link-header" href="#projects">Projects</a></li>
-            <li><a class="link-header" href="#contacs">Contacs</a></li>
-          </ul>
-        </nav>
-      </div>
+      </header>
+      <nav class="mob-nav">
+        <ul class="mob-nav-list">
+          <li class="mob-nav-link-tag">
+            <a class="mob-nav-tag current" href="#about">About me</a>
+          </li>
+          <li class="mob-nav-link-tag">
+            <a class="mob-nav-tag" href="#projects">Projects</a>
+          </li>
+          <li class="mob-nav-link-tag">
+            <a class="mob-nav-tag" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>

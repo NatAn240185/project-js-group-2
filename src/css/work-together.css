@@ -187,13 +187,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-
 .work-together {
     background-image: linear-gradient(rgba(215, 215, 221, 0.3), rgba(215, 215, 221, 0.3)), url(../img/Decor\ bg_tab_1x.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: cover;}
+
 
 @media screen and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -287,5 +286,4 @@
         padding: 64px;
         width: 492px;
         min-height: 280px;
-    }
-}
+    }}

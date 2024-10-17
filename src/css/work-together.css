@@ -1,10 +1,4 @@
 /*Mobile*/
-.work-together {
-    width: 320px;
-    margin: 80px 20px;
-padding: 0;}
-.work-together {background-color: #F0F0F0;}
-
 .work-together-title {font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -164,7 +158,7 @@ padding: 0;}
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-    background-color: #009156;
+    background-color: #92a59d;
     border: none;
 }
 
@@ -194,53 +188,34 @@ padding: 0;}
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 .work-together {
-    width: 704px;
-    margin: 124px 32px;
-    padding: 0;
-    /*background-image:  url(../img/wt-background-img_1x_desktop\ \(1\).png);
-    background-position: top right;
-    background-repeat: no-repeat;*/
-}
-/*
+    background-image: linear-gradient(rgba(215, 215, 221, 0.3), rgba(215, 215, 221, 0.3)), url(../img/Decor\ bg_tab_1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+
 @media screen and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .work-together {background-image: url(../img/wt-background-img_2x_desktop\ \(1\).png);
-            background-position: top right;
-            background-repeat: no-repeat;
-    }
-}*/
+    .work-together {
+        background-image: linear-gradient(rgba(215, 215, 221, 0.3),
+                rgba(215, 215, 221, 0.3)), url(../img/Decor\ bg_tab_2x.png);}}
 
+.work-together-title {font-size: 108px;
+        margin-bottom: 60px;}
 
-    .work-together-title {
-        font-size: 108px;
-        margin-bottom: 60px;
-    }
-
-    .wt-contacts-text {
-        font-size: 20px;
+    .wt-contacts-text {font-size: 20px;
         line-height: 160%;
-        width: 488px;
-    }
+        width: 488px;}
 
-    .wt-contacts {
-        margin-bottom: 60px;
-    }
+    .wt-contacts {margin-bottom: 60px;}
 
-    .wt-contacts-list {
-        flex-direction: row;
-    }
+    .wt-contacts-list {flex-direction: row;}
 
-    .wt-form {
-        margin-bottom: 32px;
-    }
+    .wt-form {margin-bottom: 32px;}
 
-    .wt-input {
-        min-width: 704px;
-    }
+    .wt-input {min-width: 704px;}
 
-    .wt-textarea {
-        min-width: 704px;
-    }
+    .wt-textarea {min-width: 704px;}
 
     .wt-button {
         width: 173px;
@@ -257,13 +232,8 @@ padding: 0;}
 }
 
 @media screen and (min-width: 1280px) {
-.work-together {
-            width: 1216px;
-            margin: 134px 32px;
-            padding: 0;}
-
 .work-together {background-image: linear-gradient(rgba(215, 215, 221, 0.3), rgba(215, 215, 221, 0.3)), url(../img/Decor\ bg_desktop_1x.png);
-            background-position: 20% 30%;
+            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;}
   
@@ -316,5 +286,4 @@ padding: 0;}
         padding: 64px;
         width: 492px;
         min-height: 280px;
-    }
-}
+    }}

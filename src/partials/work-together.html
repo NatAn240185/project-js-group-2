@@ -22,16 +22,16 @@
                         </address>
                     </div>
                     <div class="wt-form-content">
-                        <form class="wt-form">
+                        <form class="wt-form" action="/post-endpoint" method="post">
                             <label class="wt-label">
-                                <input class="wt-input" type="email" name="wt-email" placeholder="Your email*" required>
+                                <input class="wt-input" type="email" name="email" placeholder="Your email*" required>
                                 <span id="email-valid-icon" style="display: none;"><svg width="16" height="16">
                                         <use href="./img/work_together_icons.svg#icon-wt_input_success-filled-2"></use>
                                     </svg>
                                 </span>
                             </label>
                             <label class="wt-label">
-                                <textarea class="wt-textarea" name="user-comment" placeholder="Message"></textarea>
+                                <textarea class="wt-textarea" name="comment" placeholder="Message"></textarea>
                             </label>
                         </form>
                         <button class="wt-button" type="submit">SEND MESSAGE</button>

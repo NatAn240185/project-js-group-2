@@ -7,6 +7,7 @@
   padding: 40px 0;
 }
 .reviews-tittle {
+  font-family: var(--second-family);
   font-size: 52px;
   font-weight: 400;
   line-height: 1.23;
@@ -81,7 +82,7 @@
   border: 1px solid #e4e5e6;
   cursor: no-drop;
 }
-.reviews-section .reviews-btn:disabled .arrow {
+.reviews-section .reviews-btn:disabled .btn-icon {
   --color: #e4e5e6;
   opacity: 0.22;
 }
@@ -93,20 +94,7 @@
   font-size: 30px;
 }
 .reviews-btn-icon {
-  stroke: #292929;
-}
-.reviews-section .btn-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  fill: black;
-  stroke: black;
-  stroke-width: 0;
-  stroke-width: 2px; /* fill: var(--color-white); */ /* stroke: var(--color-white); */
-}
-.right-arrow {
-  stroke: black;
-  fill: none;
+  fill: #292929;
 }
 
 @media screen and (min-width: 768px) {
